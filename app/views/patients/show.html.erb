@@ -1,5 +1,5 @@
 <h1>Patients Show Page</h1>
 
 <% @patient.appointments.each do |appointment| %>
-    <%= link_to appointment.appointment_time.doctor, doctor_path(appointment.doctor) %>
+    <%= link_to appointment.appointment_time, doctor_path(appointment.doctor) %>
     <%end%>
