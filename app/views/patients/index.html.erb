@@ -1,0 +1,5 @@
+<h1>Patient Index</h1>
+
+<% @patients.each do |patient| %>
+    <%=link_to "Patient", patient.appoitment.count patient_path(patient)%>
+    <%end%>
